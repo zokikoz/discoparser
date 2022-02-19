@@ -1,0 +1,22 @@
+############### TEST ###############
+- description: Test device
+  hostname:
+    mask: '[Tt][Ee][Ss][Tt]'
+    groups: [11]
+    tags:
+      - tag: DEVICE
+        value: TEST
+  devices:
+    - mask: '[Cc]isco'
+      templates: [11]
+    - mask: 'nxos'
+      templates: [22,33]
+      tags:
+        - tag: N9K
+    - mask: 'ISR'
+      tags:
+        - tag: ISR
+    - mask: '[Hh]uawei'
+      templates: [44]
+      tags:
+        - tag: Huawei
